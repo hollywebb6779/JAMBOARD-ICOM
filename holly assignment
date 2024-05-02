@@ -1,0 +1,104 @@
+\<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CLASS JAMBOARD</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- STYLES AND CSS -->
+    <style>
+          /* here i am going to define the custom CSS variables */
+      :root {
+        --main-color: #ffffff;
+        --sub-color: #ffffff;
+        --main-bg-color: #ffcc00;
+        --shadow-color: rgba(0, 0, 0, 0.5);
+      }
+
+      /* Main container styles */
+       .HollyWebb {
+        width: 50vw;
+        height: 50px;
+        background: var(--main-bg-color); /* here i am using a custom CSS variable */
+        border: 10px solid #f6ff00; /* this is going to be a border black */
+        border-radius: 20px
+        margin: 0 auto;
+        position: relative; /* here i wanted the position to be relative */
+      }
+/* holly webb text */
+.HollyWebb-text {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center; /* Centering the text horizontally */
+}
+      .trapezoid {
+        border-bottom: 100px solid #0a35a4;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        height: 0;
+        width: 125px;
+        margin: 0 auto;
+      }
+/* trapazoid shape */
+      .triangle-down {
+        position: absolute; /* heres a position absolute */
+        top: 200px;
+        left: calc(50% - 50px); /* heres a CSS calc function is used to calculate the width and left position of th */
+        width: 0;
+        height: 0;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom: 100px solid #ea00ee;
+      }
+      /* the green oval shape */
+      .oval {
+        position: absolute; /* heres a position absolute  to position them relative to the container.*/
+        top: 50px;
+        left: 500px;
+        width: 200px;
+        height: 100px;
+        background-color: #058405;
+        border-radius: 50%;
+        box-shadow: 0 0 20px var(--shadow-color); /* here im  adding shadow effect defined in the css styles  */
+        
+      }
+
+      .parallelogram {
+        width: 100px;
+        height: 50px;
+        transform: skew(45deg);
+        background: #0d9b46;
+        margin: 20px auto;
+        position: absolute; /* heres a position: absolute */
+        top: 200px;
+        left: calc(100% - 250px); /*CSS calc() function */
+      }
+/* blue rectangle shape */
+      .rectangle {
+        position: absolute; /* heres a position absolute to position them relative to the container. */
+        top: 150px;
+        left: 150px;
+        width: 150px;
+        height: 200px;
+        background-color: #3333ff;
+        box-shadow: 0 0 20px var(--shadow-color); /* adding the shadow effect */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- BEGINNING OF JAMBOARD  -->
+    <div class="HollyWebb">
+      <div class="HollyWebb-text">Holly Webb</div>
+    </div>
+    <div class="trapezoid"></div>
+    <div class="rectangle"></div>
+    <div class="triangle-down"></div>
+    <div class="oval"></div>
+    <div class="parallelogram"></div>
+
+    <script src="" async defer></script>
+  </body>
+</html>
